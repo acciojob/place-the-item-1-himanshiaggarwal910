@@ -1,2 +1,17 @@
 
 /* Your CSS Code here. */
+/* CSS for the container (holder) */
+.holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between items as needed */
+}
+
+/* CSS for the individual items */
+.item {
+  flex: 1; /* Allow items to grow and shrink to fill the space evenly */
+  min-width: calc(33.33% - 10px); /* Adjust the width based on the number of items you want in a row */
+  margin: 5px; /* Add some space between items */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
